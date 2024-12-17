@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinner with pretty Katimen</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Original Question and Buttons -->
+    <div class="heart">❤️</div>
+    <div class="question">
+      <h1>Do you want to have dinner with me?</h1>
+    </div>
+    <div class="button-container">
+      <button class="button" id="yesButton" onclick="chooseAnswer(true)">
+        Yes
+      </button>
+      <button class="button" id="noButton" onclick="chooseAnswer(false)">
+        No
+      </button>
+    </div>
+
+    <!-- Message Section for Yes -->
+    <div class="message hidden" id="yesMessage">
+      <h1>Yay! I'd love to have dinner with you! 🥰</h1>
+      <p>Let's make it a special evening.</p>
+      <button class="button" onclick="goBack()">Back</button>
+    </div>
+
+    <!-- Message Section for No -->
+    <div class="message hidden" id="noMessage">
+      <h1>Oh, that's okay! 😘</h1>
+      <p>Guess I'll have to steal your heart some other way. 😉</p>
+      <button class="button" onclick="goBack()">Back</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
